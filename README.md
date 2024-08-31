@@ -43,7 +43,7 @@ Meus agradecimentos à Codifica e iniciativa +praTI pela oportunidade e para mai
 <p><strong>Clone este repositório:</strong></p>
 <p>No terminal, execute o seguinte comando para clonar o repositório:</p>
 
-<pre><code>git clone &lt;https://github.com/Setznagl/Codifica_MaisPraTI_Fullstack_2024_listasDeExercicios.git&gt;</code></pre>
+<pre><code>git clone https://github.com/Setznagl/Codifica_MaisPraTI_Fullstack_2024_listasDeExercicios.git</code></pre>
 
 <h3>Executando os Exercícios</h3>
 
