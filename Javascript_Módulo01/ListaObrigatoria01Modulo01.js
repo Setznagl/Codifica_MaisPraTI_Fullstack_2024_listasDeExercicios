@@ -93,7 +93,47 @@ console.log("// 6. Ler três valores para os lados de um triângulo: A, B e C. V
     "// Triângulo escaleno: possui todos os lados diferentes (A<>B e B <> C)" +
     "// Triângulo eqüilátero: possui todos os lados iguais (A=B e B=C)")
 
+    let valorA_EX6 = checaParametros();
+    let valorB_EX6 = checaParametros();
+    let valorC_EX6 = checaParametros();
 
+    function checaParametros() {
+        let tmpValor = undefined;
+        while ( tmpValor === 0 || tmpValor === undefined)
+        {
+            tmpValor = Number(prompt('[Digite um valor]'));
+        }
+        return tmpValor
+    }
+
+    let triangulo = formaTriangulo(valorA_EX6 , valorB_EX6 , valorC_EX6);
+
+    function formaTriangulo(valorA, valorB, valorC) {
+        const cond1 = valorA < valorB + valorC;
+        const cond2 = valorB < valorA + valorC;
+        const cond3 = valorC < valorA + valorB;
+    
+        if (cond1 && cond2 && cond3) {
+            console.log("Forma triangulo? (true)");
+            return true;
+        } else {
+            console.log("Forma triangulo? (false)");
+            return false;
+        }
+    }
+
+    function qualTriangulo(valorA , valorB , valorC){
+        let tipoTriangulo;
+        valorA === valorB || valorB === valorC || valorC === valorA ? tipoTriangulo = "Isósceles" : tipoTriangulo;
+        valorA !== valorB && valorB !== valorC ? tipoTriangulo = "Escaleno" : tipoTriangulo;
+        valorA === valorB && valorB === valorC ? tipoTriangulo = "Equilátero" : tipoTriangulo;
+
+        return tipoTriangulo;
+    };
+
+    if(triangulo === true){
+        console.log(qualTriangulo(valorA_EX6 , valorB_EX6 , valorC_EX6));
+    }
 
     console.log(" ");
 console.log("// 7. As maçãs custam R$ 0,30 se forem compradas menos do que uma dúzia, e R$ 0,25 se" +
@@ -156,46 +196,46 @@ console.log("// 7. As maçãs custam R$ 0,30 se forem compradas menos do que uma
 
 
 
-console.log("// 13. Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer" +
-    "// a média aritmética desses números.")
-let SumEX13 = 0;
-let averageCountEX13 = 0;
-let tempNumberEX13;
-do{
-    tempNumberEX13 = Number(prompt('[Digite um número]'));
-    if(tempNumberEX13 !== 0)
-        {
-            SumEX13 += tempNumberEX13;
-            averageCountEX13++;
-        }
-}
-while(tempNumberEX13 !== 0) 
-let resultEX13 = SumEX13 / averageCountEX13;
-console.log(resultEX13);console.log(" ");    
+// console.log("// 13. Fazer um algoritmo para receber números decimais até que o usuário digite 0 e fazer" +
+//     "// a média aritmética desses números.")
+// let SumEX13 = 0;
+// let averageCountEX13 = 0;
+// let tempNumberEX13;
+// do{
+//     tempNumberEX13 = Number(prompt('[Digite um número]'));
+//     if(tempNumberEX13 !== 0)
+//         {
+//             SumEX13 += tempNumberEX13;
+//             averageCountEX13++;
+//         }
+// }
+// while(tempNumberEX13 !== 0) 
+// let resultEX13 = SumEX13 / averageCountEX13;
+// console.log(resultEX13);console.log(" ");    
 
 
 
 
-console.log("// 14. Crie um programa que calcula o fatorial de um número fornecido pelo usuário" +
-    "// utilizando um loop for ou while.")
-    let fatorialInputEX14 = Number(prompt('[Fatorial]:'))
-    let fatorial = 1;
-    while (fatorialInputEX14 > 0){
-        fatorial *= fatorialInputEX14;
-        fatorialInputEX14--
-    } console.log(fatorial)
-console.log(" ");
+// console.log("// 14. Crie um programa que calcula o fatorial de um número fornecido pelo usuário" +
+//     "// utilizando um loop for ou while.")
+//     let fatorialInputEX14 = Number(prompt('[Fatorial]:'))
+//     let fatorial = 1;
+//     while (fatorialInputEX14 > 0){
+//         fatorial *= fatorialInputEX14;
+//         fatorialInputEX14--
+//     } console.log(fatorial)
+// console.log(" ");
 
 
 
 
-console.log("// 15. Escreva um programa que gera e imprime os primeiros 10 números da sequência de" +
-    "// Fibonacci utilizando um loop for.");
-    let aEX15 = 0;
-    let bEX15 = 1;
-for (let i = 0 ; i < 9; i++) {
-    console.log(a);
-    let temp = aEX15 + bEX15;
-    aEX15 = bEX15;
-    bEX15 = temp;
-}console.log(" ") 
+// console.log("// 15. Escreva um programa que gera e imprime os primeiros 10 números da sequência de" +
+//     "// Fibonacci utilizando um loop for.");
+//     let aEX15 = 0;
+//     let bEX15 = 1;
+// for (let i = 0 ; i < 9; i++) {
+//     console.log(aEX15);
+//     let temp = aEX15 + bEX15;
+//     aEX15 = bEX15;
+//     bEX15 = temp;
+// }console.log(" ") 
