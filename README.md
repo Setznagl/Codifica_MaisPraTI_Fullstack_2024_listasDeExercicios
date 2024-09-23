@@ -1,9 +1,11 @@
 <p align="center">
 <h1 align="center"> Listas de Exercícios - Codifica +praTI Fullstack2024 </h1><br>
 <div align="center">
-    <img alt="" width="45%" src="https://www.maisprati.com.br/wp-content/uploads/2020/06/logo_azul.png">
-    <img alt="Javascript" width="25%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
-    <img alt="VS Code" width="25%" src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg">
+    <img alt="" width="100%" src="https://www.maisprati.com.br/wp-content/uploads/2020/06/logo_azul.png">
+    <img alt="VS Code" width="10%" src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg">
+    <img alt="HTML" width="10%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+    <img alt="CSS" width="10%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <img alt="Javascript" width="10%" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
 <div><br><br>  
 <h2>Este repositório é dedicado a armazenar as atividades obrigatórias e sugeridas realizadas durante o bootcamp Fullstack +praTI 2024.</h2> 
 <p>
