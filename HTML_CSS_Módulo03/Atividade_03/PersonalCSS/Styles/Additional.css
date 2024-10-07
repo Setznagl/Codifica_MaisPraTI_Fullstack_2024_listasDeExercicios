@@ -1,0 +1,58 @@
+.bodyGridDesign{
+    background-color: var(--primary-color-dark);
+    grid-template-areas: 
+    "header header header header header header header header header header"
+    "main main main main main main main main main main"
+    "main main main main main main main main main main"
+    "main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+
+.mainGridDesign{
+    display: grid;
+    grid-template-areas: "section aside";
+    grid-template-columns: 7fr 3fr;
+    height: 100%;
+}
+
+.footerLabel{ grid-area: footer; background-color: var(--secondary-color-light); }
+.headerLabel{ grid-area: header; background-color: var(--primary-color-dark); }
+.mainLabel{ grid-area: main; background-color: var(--secondary-color-dark); }
+.sectionLabel{ grid-area: section; }
+.asideLabel{ grid-area: aside; }
+
+.heightInheritance{
+    height: 100%;
+}
+
+#titleName{
+    font-family: 'Nexa';
+    color: var();
+    text-decoration: underline;
+}
+
+#titleContainer{
+    padding: 0.5rem;
+    border-radius: 1.2rem 0rem 1.5rem 0.65rem;
+    background-color: aquamarine;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover{
+    transition: 300ms;
+    color: var(--primary-color-light);
+}
+
+.link:hover:before{
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    margin-right: 0.2rem;
+    height: 0.75rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color-light);
+}
