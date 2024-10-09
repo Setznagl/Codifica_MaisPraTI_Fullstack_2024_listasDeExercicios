@@ -1,11 +1,30 @@
 .bodyGridDesign{
     background-color: var(--primary-color-dark);
     grid-template-areas: 
-    "header header header header header header header header header header"
-    "main main main main main main main main main main"
-    "main main main main main main main main main main"
-    "main main main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer footer";
+    "header"
+    "main"
+    "main"
+    "main"
+    "footer";
+}
+
+.footerLabel{
+    border-top: 0.05rem solid var(--primary-color-dark);
+     grid-area: footer; background-color: var(--secondary-color-light); 
+ }
+.headerLabel{
+    color: var(--secondary-color-03);
+     grid-area: header; background-color: var(--primary-color-dark);
+}
+.mainLabel{ 
+    grid-area: main; background-color: var(--secondary-color-dark); 
+}
+.sectionLabel{ 
+    grid-area: section;
+}
+.asideLabel{
+     grid-area: aside;
+     background-color: var(--primary-color-light); 
 }
 
 .mainGridDesign{
@@ -14,12 +33,6 @@
     grid-template-columns: 7fr 3fr;
     height: 100%;
 }
-
-.footerLabel{ grid-area: footer; background-color: var(--secondary-color-light); }
-.headerLabel{ grid-area: header; background-color: var(--primary-color-dark); }
-.mainLabel{ grid-area: main; background-color: var(--secondary-color-dark); }
-.sectionLabel{ grid-area: section; }
-.asideLabel{ grid-area: aside; }
 
 .heightInheritance{
     height: 100%;
@@ -55,4 +68,50 @@
     height: 0.75rem;
     border-radius: 1rem;
     background-color: var(--primary-color-light);
+}
+
+#figure{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+}
+
+#figure > img{
+    float: inline-start;
+    margin-left: 0.25rem;
+    height: 5rem;
+    width: 7.5rem;
+}
+
+#figure > figcaption{
+    margin: 0.5rem;
+}
+
+.footerLabel > p {
+    font-size: 0.6rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.asideLabel > ul > p{
+    color: var(--secondary-color-03);
+    margin-top: 0.25rem;
+    text-align: center;
+}
+
+.asideLabel > ul > li{
+    margin-top: 0.25rem;
+    text-align: center;
+}
+
+.asideLabel > ul > li > a{
+    color: var(--primary-color-dark);
+    text-decoration: inherit;
+}
+
+.asideLabel > ul > li:hover{
+    color: var(--primary-color-dark);
+    transition: 0.3s;
+    transform: scale(0.85);
+    text-decoration: underline;
 }
