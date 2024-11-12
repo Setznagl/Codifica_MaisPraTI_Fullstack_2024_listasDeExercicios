@@ -67,5 +67,14 @@ Meus agradecimentos à Codifica e iniciativa +praTI pela oportunidade e para mai
 <p>Para rodar a lista de exercícios acesse o diretório do projeto e uma vez aberto terminal dentro do mesmo use o comando:</p>
 <pre><code>node ListaObrigatoria02Modulo01.js</code></pre>
 
+<br><br><br><br>
+
+<h1> Exercícios Módulo 03 (Exercício 5)</h1>
+<h2>Configuração e Execução dos Exercícios</h2>
+<h3>Pré-requisitos</h3>
+<p>Antes de começar, certifique-se de que o javascript está habilitado no navegador:</p>
+
+<p>Certifique-se de possuir conexão com a internet, este projeto utiliza o Bootstrap via link de referência:</p>
+<pre><code>Para execução copiar o caminho absoluto no navegador ou utilizar extensão como o LiveServer para server local</code></pre>
 
 
